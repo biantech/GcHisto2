@@ -20,3 +20,7 @@
 JAVA_OPTS="-XX:NewSize=512m -XX:MaxNewSize=1024m -Xms512m -Xmx2048m -XX:MetaspaceSize=1024m -XX:MaxMetaspaceSize=2048m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSCompactAtFullCollection -XX:CMSFullGCsBeforeCompaction=0 -XX:+CMSClassUnloadingEnabled -XX:+UseFastAccessorMethods -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -Xloggc:/logs/app/gc.log"
 ```
 于是，我们就有了gc.log这个文件，系统运行一段时间后（如果你的系统运行很平稳，一两天也没事，如果你的系统病入膏肓，那就半个一个小时吧），把gc.log下载下来，使用本工具加载打开即可。
+
+# 4. 运行
+进入到target 目录，执行如下的命令 
+- java -jar gc-histo2-2.0.3-SNAPSHOT-jar-with-dependencies.jar 
